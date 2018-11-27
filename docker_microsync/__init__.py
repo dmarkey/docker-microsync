@@ -14,7 +14,7 @@ import sys
 import io
 import tarfile
 from docopt import docopt
-from queue import SimpleQueue, Empty
+from queue import Queue, Empty
 from watchdog.events import FileSystemEventHandler, FileMovedEvent, \
     FileCreatedEvent, FileModifiedEvent, FileDeletedEvent
 from watchdog.observers import Observer
@@ -55,7 +55,7 @@ class DockerMicrosync(object):
 
         self.timeout = timeout
         self.observer = Observer()
-        self.outbound_queue = SimpleQueue()
+        self.outbound_queue = Queue()
         self.docker_client = docker.from_env()
         self.prefix_path = prefix_path
         self.stopping = False
