@@ -12,11 +12,11 @@ pip install docker-microsync
 
 ## Usage
 
-Lets say you have a development image tagged myimage:latest current deployed and is up to date, this image is running a project in the current directory and this current directory is mapped to /opt/src, you would invoke docker-microsync like this:
+Lets say you have a development image tagged myimage:latest current deployed and is up to date, this image is running a project thats built from the current directory and this directory is mapped to /opt/src, you would invoke docker-microsync like this:
 
 `docker-microsync . /opt/src  myimage:latest`
 
-And changes in the current directory will be copied to /opt/src in the docker image
+And changes in the current directory will be copied to /opt/src in the docker image.
 
 ## Advanced usage
 
