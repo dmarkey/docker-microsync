@@ -90,3 +90,9 @@ Freshpod then redeploys any running pods using the image as it sees that a new i
 # How long does it take to deploy my new code?
 
 It depends how long your app takes to initialise. The new image will be built in 1-3 seconds and it usually takes another 5 seconds for kubernetes to redeploy an application.
+
+# Limitations
+
+It runs in memory so big files that are changing will be slow and memory hungry. Moving files doesnt delete the old file (PRs welcome)
+
+File attributes(like executable) arent copied.
