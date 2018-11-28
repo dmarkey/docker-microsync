@@ -6,7 +6,8 @@ script:
 deploy:
   password:
     secure: bWa5mrDu7FNEtbdYkVYiDCy8fERCSry6rttDX0gmy20Pz4v52gM1ULVXevIRjHaFKk/Xvjvy7bMmzPDftOPr+xJV+GmD3I3GWGpwfBui+TR6kXYZhg3RFAZKuGoDh3/+5epCL+MIlVtmrW/W6qWgfOzvdcmP4EzOqFMCvsZAolmJHSkhqYDr7eZ9epG7ou6ESVA2yeRHh+Gr0WHVCQq5MZp7rKlgsJpH75fk3KsH1pycIEPuueBhnOtHyqDByfi03kp+4yZgqQPh5QPwCqMYIq6DwJwawHfrXllpegUdUwzVuaY3t2R/rROIR7lSEtkAfwunAuuvav2NRWgv63VW41rJEja48Qi6GbPSoZ72gCaV/Xy0UjCxvWBdVZ4xny5I7es9WpVNnHbSrG6mROtcPvDKWMrN+ygJt6iAATpye7FU0SEhJyBMnHtp+T/6sU8JSLFJ6tj0Kd/GTsh/TZ1XBrGWc/etIwxFn83g9/LMYl0rtXbWB1yodFlhSQdx/Q+6AaoRwy6oLuH9ObBoPQg0IBsKruTqIVIhHk5jSPN1YTfjGLwJmTFaRuaZR4INlvLakPTDW3DQdKVa4jhkJaama80WYM/or6cYYjJjb0mAKzTNL/Y1SBWs4sSiGsL+dG4zfc1MJ/kdj3WeEjb3+b2Svcg+WrUn65x44/EHmbr3Vqo=
-    provider: pypi
-    user: dmarkey
-    on: 
-      tags: true
+  provider: pypi
+  user: dmarkey
+  on:
+    tags: true
+
