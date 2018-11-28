@@ -82,7 +82,8 @@ I seen the need for a tool that is uncomplicated. Similar tools require creating
 This tool is known to work on Linux and OSX, in theory it can work on windows but this is untested.
 
 # How does it work?
-It's quite simple. It uses the excellent watchdog library to watch for filesystem changes in a platform dependent way. It then keeps an in-memory docker context and adds any changed files to that context. After a specific period of timeout it sends the context along with a Dockerfile and this adds the required layers to the current running image and tags it accordingly.
+It's quite simple. It uses the excellent watchdog library to watch for filesystem changes in a platform independent way. 
+It then keeps an in-memory docker context and adds any changed files to that context. After a specific period of timeout it sends the context along with a Dockerfile and this adds the required layers to the current running image and tags it accordingly.
 
 Freshpod then redeploys any running pods using the image as it sees that a new image has been tagged.
 
