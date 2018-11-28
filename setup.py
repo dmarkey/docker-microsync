@@ -1,5 +1,4 @@
-from distutils.core import setup
-import setuptools # noqa
+from setuptools import setup
 
 with open('requirements.txt') as f:
     required = f.read().splitlines()
