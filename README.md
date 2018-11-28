@@ -77,7 +77,7 @@ After a timeout period, (default 0.5 seconds) It proceeds to build a docker imag
 This is a complementary to "freshpod" (https://github.com/GoogleCloudPlatform/freshpod) which will re-deploy running pods that are using the image.
 
 # Why?
-I seen the need for a tool that is uncomplicated. Similar tools require creating creating VPNs etc which seem complicated. This requires no special networking etc and freshpod comes out of the box with tools like Minikube.
+I seen the need for a tool that is uncomplicated. Similar tools require creating VPNs etc. which seems complicated. This requires no special networking etc and freshpod comes out of the box with tools like Minikube.
 
 This tool is known to work on Linux and OSX, in theory it can work on windows but this is untested.
 
